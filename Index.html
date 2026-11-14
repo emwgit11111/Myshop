@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Магазин</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        body { background: #0f0f0f; color: #fff; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container { max-width: 500px; width: 100%; }
+        h1 { font-size: 28px; text-align: center; margin-bottom: 5px; }
+        .sub { text-align: center; color: #888; font-size: 14px; margin-bottom: 30px; }
+        
+        .card { background: #1e1e1e; border-radius: 20px; padding: 24px; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); border: 1px solid #333; }
+        .card h2 { font-size: 20px; margin-bottom: 8px; }
+        .desc { font-size: 14px; color: #aaa; margin-bottom: 20px; }
+        
+        .item-group { background: #2a2a2a; padding: 15px; border-radius: 12px; margin-bottom: 15px; display: flex; flex-direction: column; gap: 10px; }
+        .item-header { display: flex; justify-content: space-between; align-items: center; }
+        .price { font-weight: 700; color: #4ade80; font-size: 18px; }
+        
+        .btn-buy { display: block; width: 100%; padding: 12px; background: #4ade80; color: #000; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; transition: 0.2s; }
+        .btn-buy:hover { background: #22c55e; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🛒 Магазин</h1>
+    <p class="sub">Выбери нужный товар</p>
+
+    <!-- Карточка 1: Копия BR -->
+    <div class="card">
+        <h2>📘 Копия BR</h2>
+        <p class="desc">Пошаговое руководство с файлами и настройкой.</p>
+        
+        <div class="item-group">
+            <div class="item-header">
+                <span>Копия BR</span>
+                <span class="price">400 ₽</span>
+            </div>
+            <a href="https://t.me/ooemw" target="_blank" class="btn-buy">Купить за 400₽</a>
+        </div>
+
+        <div class="item-group">
+            <div class="item-header">
+                <span>Копия BR</span>
+                <span class="price">550 ₽</span>
+            </div>
+            <a href="https://t.me/ooemw" target="_blank" class="btn-buy">Купить за 550₽</a>
+        </div>
+    </div>
+
+    <!-- Карточка 2: Приватка TG -->
+    <div class="card">
+        <h2>Своя приватка TG</h2>
+        <p class="desc">Приватные аккаунты Telegram с хорошим отлежником.</p>
+        
+        <div class="item-group">
+            <div class="item-header">
+                <span>Хост ваш</span>
+                <span class="price">600 ₽</span>
+            </div>
+            <a href="https://t.me/ooemw" target="_blank" class="btn-buy">Купить за 600₽</a>
+        </div>
+
+        <div class="item-group">
+            <div class="item-header">
+                <span>Хост с меня</span>
+                <span class="price">1200 ₽</span>
+            </div>
+            <a href="https://t.me/ooemw" target="_blank" class="btn-buy">Купить за 1200₽</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
